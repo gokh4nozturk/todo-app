@@ -7,7 +7,7 @@ import AddTodo from './components/AddTodo';
 function App() {
   return (
     <div className="App container">
-      <div className="row justify-content-center flex-column align-content-center">
+      <div className="row justify-content-center align-content-center">
         <div className="col-8">
           <Navbar />
           <AddTodo />
