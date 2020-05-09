@@ -3,9 +3,13 @@ import './App.css';
 import Navbar from './components/Navbar';
 
 const App = () => {
-  const [todo, setTodo] = useState([]);
+  const [todo, setTodo] = useState([
+    { id: 0, input: 'dgkjdlkfjg' },
+    { id: 1, input: 'gdklgjdlgkj' },
+    { id: 2, input: 'fsfösfsşlkfs' },
+  ]);
   const [input, setInput] = useState('');
-  const AddTodo = () => {
+  const addTodo = () => {
     setTodo([...todo, { input, id: todo.length }]);
     setInput('');
   };
@@ -30,7 +34,7 @@ const App = () => {
           {todo.map((todo) => (
             <div className="card">
               <div className="card-header text-center">
-                <p>To-do</p>
+                <p>To do {todo.id + 1}</p>
               </div>
               <div className="card-body">
                 <p className="todo">{todo.input}</p>
