@@ -26,7 +26,7 @@ const App = () => {
           placeholder="enter to-do"
           value={input}
         ></input>
-        <button className="btn btn-primary" onClick={AddTodo}>
+        <button className="btn btn-primary" onClick={addTodo}>
           Add Todo
         </button>
 
